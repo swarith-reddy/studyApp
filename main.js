@@ -14,6 +14,7 @@ fetch('MOCK_DATA.json')
     let grade = data.grade;
     let subjects = data.subjects
     
+
     data.forEach(personHTML);
 
     function personHTML(item, index) {
@@ -36,7 +37,7 @@ fetch('MOCK_DATA.json')
                         <p> Student is in ${item.grade} and is taking these courses!
                     </div>
                     <label class="switch">
-                    <input type="checkbox">
+                    <input type="checkbox" onclick=addMatch()>
                     <span class="slider"></span>
                 </div>
             </div>

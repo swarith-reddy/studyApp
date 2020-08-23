@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - Bootstrap Carousel Slider</title>
-  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'><link rel="stylesheet" href="./match.css">
-
+    <meta charset="UTF-8">
+    <title>Matches</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="./match.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <html lang="en">
 <head>
   
-  <title>Animated Vertical Carousel</title>
+  <title>Matches</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -19,6 +20,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     </head>
 <body>
+    <div class="grid">
+        <aside class="sidenav">
+            <div class="sidenav__brand">
+              <i class="fas fa-feather-alt sidenav__brand-icon"></i>
+              <a class="sidenav__brand-link" href="#">Study<span class="text-light">App</span></a>
+              <i class="fas fa-times sidenav__brand-close"></i>
+            </div>
+            <div class="sidenav__profile">
+              <div class="sidenav__profile-avatar"></div>
+              <div class="sidenav__profile-title text-light">Chris T</div>
+            </div>
+            <div class="row row--align-v-center row--align-h-center">
+              <ul class="navList">
+                <li class="navList__heading">Your Matches<i class="far fa-file-alt"></i></li>
+                  <li>
+                  <div class="navList__subheading row row--align-v-center">
+                    <span class="navList__subheading-icon"><i class="fas fa-camera"></i></span>
+                    <span class="navList__subheading-title">>></span>
+                  </div>
+                  <ul class="subList subList">
+                    <li class="subList__item">Lusa Darrell</li>
+                    <li class="subList__item">Berverly Shortall</li>
+                    <li class="subList__item">Margarethe Lawty</li>
+                    <li class="subList__item">Way Worsall</li>
+                    <li class="subList__item">Tawsha Vyse</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </aside>
+    <main class="main">
     <section class="slide-wrapper">
         <div class="container">
             <div id="myCarousel" class="carousel slide">
@@ -45,6 +77,8 @@
             </div>
         </div>
     </section>
+    </main>
+    </div>
 </body>
 <!-- partial -->
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>

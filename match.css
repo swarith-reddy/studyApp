@@ -100,6 +100,7 @@ animation-duration:2s; -webkit-animation-duration:2s; -moz-animation-duration:2s
     display: inline-block;
     width: 60px;
     height: 34px;
+    margin-top: 60px;
   }
   
   .switch input { 
@@ -118,7 +119,6 @@ animation-duration:2s; -webkit-animation-duration:2s; -moz-animation-duration:2s
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
-    margin-top: 30px;
   }
   
   .slider:before {
@@ -154,4 +154,221 @@ animation-duration:2s; -webkit-animation-duration:2s; -moz-animation-duration:2s
   
   .slider.round:before {
     border-radius: 50%;
+  }
+
+  .dropdown {
+    position: absolute;
+    top: 54px;
+    right: -16px;
+    width: 220px;
+    height: auto;
+    z-index: 1;
+    background-color: #fff;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all .3s;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  }
+  .dropdown__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .dropdown__list-item {
+    padding: 12px 24px;
+    color: #777;
+    text-transform: capitalize;
+  }
+  .dropdown__list-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .dropdown__icon {
+    color: #1BBAE1;
+  }
+  .dropdown__title {
+    margin-left: 10px;
+  }
+  .dropdown:before {
+    position: absolute;
+    content: "";
+    top: -6px;
+    right: 30px;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 6px solid #FFF;
+  }
+  .dropdown--active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .sidenav {
+    position: fixed;
+    grid-area: sidenav;
+    height: 100%;
+    overflow-y: auto;
+    background-color: #394263;
+    color: #FFF;
+    width: 240px;
+    transform: translateX(-245px);
+    transition: all .6s ease-in-out;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    z-index: 2;
+  }
+  .sidenav__brand {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+  .sidenav__brand-icon {
+    margin-top: 2px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .sidenav__brand-close {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    visibility: visible;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+  }
+  .sidenav__brand-link {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+    margin: 0 15px;
+    letter-spacing: 1.5px;
+  }
+  .sidenav__profile {
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .sidenav__profile-avatar {
+    background-image: url("https://christophertasc6.github.io/personalWebsite/assets/me.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    height: 64px;
+    width: 64px;
+    margin: 0 15px;
+  }
+  .sidenav__profile-title {
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+  .sidenav__arrow {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    top: 50%;
+    right: 20px;
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    transform: translateY(-50%) rotate(225deg);
+  }
+  .sidenav__sublist {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0 0;
+  }
+  .sidenav--active {
+    transform: translateX(0);
+  }
+  
+  .navList {
+    width: 240px;
+    padding: 0;
+    margin: 0;
+    background-color: #394263;
+    list-style-type: none;
+  }
+  .navList__heading {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 16px 3px;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  .navList__subheading {
+    position: relative;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+  }
+  .navList__subheading-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    width: 12px;
+  }
+  .navList__subheading-title {
+    margin: 0 15px;
+  }
+  .navList__subheading:after {
+    position: absolute;
+    content: "";
+    height: 6px;
+    width: 6px;
+    top: 17px;
+    right: 25px;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    transform: rotate(225deg);
+    transition: all .2s;
+  }
+  .navList__subheading:hover {
+    background-color: #303753;
+    cursor: pointer;
+  }
+  .navList__subheading--open {
+    background-color: #303753;
+  }
+  .navList__subheading--open:after {
+    transform: rotate(315deg);
+  }
+  .navList .subList {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background-color: #262c43;
+    visibility: visible;
+    overflow: hidden;
+    max-height: 200px;
+    transition: all .4s ease-in-out;
+  }
+  .navList .subList__item {
+    padding: 8px;
+    text-transform: capitalize;
+    padding: 8px 30px;
+    color: #D3D3D3;
+  }
+  .navList .subList__item:first-child {
+    padding-top: 15px;
+  }
+  .navList .subList__item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+  }
+  .navList .subList--hidden {
+    visibility: hidden;
+    max-height: 0;
   }

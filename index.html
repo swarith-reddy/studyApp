@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>StudyApp</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/png" href="#"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="grid">
+  <header class="header">
+    <i class="fas fa-bars header__menu"></i>
+    <div class="header__search">
+      <input class="header__input" placeholder="Search..." />
+    </div>
+    <div class="header__avatar">
+      <div class="dropdown">
+        <ul class="dropdown__list">
+          <li class="dropdown__list-item">
+            <span class="dropdown__icon"><i class="far fa-user"></i></span>
+            <span class="dropdown__title">my profile</span>
+          </li>
+          <li class="dropdown__list-item">
+            <span class="dropdown__icon"><i class="fas fa-clipboard-list"></i></span>
+            <span class="dropdown__title">my account</span>
+          </li>
+          <li class="dropdown__list-item">
+            <span class="dropdown__icon"><i class="fas fa-sign-out-alt"></i></span>
+            <span class="dropdown__title">log out</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <aside class="sidenav">
+    <div class="sidenav__brand">
+      <i class="fas fa-feather-alt sidenav__brand-icon"></i>
+      <a class="sidenav__brand-link" href="#">Study<span class="text-light">App</span></a>
+      <i class="fas fa-times sidenav__brand-close"></i>
+    </div>
+    <div class="sidenav__profile">
+      <div class="sidenav__profile-avatar"></div>
+      <div class="sidenav__profile-title text-light">Chris T</div>
+    </div>
+    <div class="row row--align-v-center row--align-h-center">
+      <ul class="navList">
+        <li class="navList__heading">Study Stuff<i class="far fa-file-alt"></i></li>
+          <li>
+          <div class="navList__subheading row row--align-v-center">
+            <span class="navList__subheading-icon"><i class="fas fa-camera"></i></span>
+            <span class="navList__subheading-title">Resources</span>
+          </div>
+          <ul class="subList subList--hidden">
+            <li class="subList__item">KhanAcademy</li>
+            <li class="subList__item">CollegeBoard</li>
+            <li class="subList__item">Youtube</li>
+          </ul>
+        </li>
+        <li>
+          <div class="navList__subheading row row--align-v-center">
+            <span class="navList__subheading-icon"><i class="fas fa-camera"></i></span>
+            <span class="navList__subheading-title">Tools</span>
+          </div>
+          <ul class="subList subList--hidden">
+            <li class="subList__item">Whiteboard</li>
+            <li class="subList__item">Calculator</li>
+            <li class="subList__item">Formulas</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="main-header">
+      <div class="main-header__intro-wrapper">
+        <div class="main-header__welcome">
+          <div class="main-header__welcome-title text-light">Welcome, <strong>Chris</strong></div>
+          <div class="main-header__welcome-subtitle text-light">Let's get studying!</div>
+        </div>
+        <div class="quickview">
+          <div class="quickview__item">
+            <div class="quickview__item-total">10</div>
+            <div class="quickview__item-description">
+              <i class="far fa-calendar-alt"></i>
+              <span class="text-light">Matches</span>
+            </div>
+          </div>
+          <div class="quickview__item">
+            <div class="quickview__item-total">7</div>
+            <div class="quickview__item-description">
+              <i class="far fa-comment"></i>
+              <span class="text-light">Conversations</span>
+            </div>
+          </div>
+          <div class="quickview__item">
+            <div class="quickview__item-total">4</div>
+            <div class="quickview__item-description">
+              <i class="fas fa-file-alt"></i>
+              <span class="text-light">Drafts</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-overview">
+      <div class="overviewCard">
+        <div class="overviewCard-icon overviewCard-icon--document">
+           <i class="far fa-file-alt"></i>
+        </div>
+        <div class="overviewCard-description">
+          <h3 class="overviewCard-title text-light">Unnamed <strong>Document</strong></h3>
+          <p class="overviewCard-subtitle">Document</p>
+        </div>
+      </div>
+      <div class="overviewCard">
+        <div class="overviewCard-icon overviewCard-icon--calendar">
+           <i class="far fa-file-alt"></i>
+        </div>
+        <div class="overviewCard-description">
+          <h3 class="overviewCard-title text-light">Random <strong>Wireframe</strong></h3>
+          <p class="overviewCard-subtitle">Whiteboard</p>
+        </div>
+      </div>
+      <div class="overviewCard">
+        <div class="overviewCard-icon overviewCard-icon--mail">
+           <i class="far fa-file-alt"></i>
+        </div>
+        <div class="overviewCard-description">
+          <h3 class="overviewCard-title text-light">Brainstorm <strong>Design</strong></h3>
+          <p class="overviewCard-subtitle">Document</p>
+        </div>
+      </div>
+      <div class="overviewCard">
+        <div class="overviewCard-icon overviewCard-icon--photo">
+           <i class="far fa-calculator"></i>
+        </div>
+        <div class="overviewCard-description">
+          <h3 class="overviewCard-title text-light">Algebraic <strong>Functions</strong></h3>
+          <p class="overviewCard-subtitle">Calculator</p>
+        </div>
+      </div>
+    </div> <!-- /.main__overview -->
+    <div class="main__cards">
+      <div class="card">
+        <div class="card__header">
+          <div class="card__header-title text-light">Recent <strong>Matches</strong>
+            <a href="match.html" class="card__header-link text-bold">View All</a>
+          </div>
+          <div class="settings">
+            <div class="settings__block"><i class="fas fa-edit"></i></div>
+            <div class="settings__block"><i class="fas fa-cog"></i></div>
+          </div>
+        </div>
+        <div class="card__main">
+          <div class="card__row">
+            <div class="card__icon"><i class="fas fa-book"></i></div>
+            <div class="card__time">
+              <div>Today</div>
+            </div>
+            <div class="card__detail">
+              <div class="card__source text-bold">Caleb K</div>
+              <div class="card__description">Wants to study the SAT or ACT!</div>
+              <div class="card__note">12th Grade</div>
+            </div>
+          </div>
+          <div class="card__row">
+            <div class="card__icon"><i class="fas fa-book"></i></div>
+            <div class="card__time">
+              <div>Yesterday</div>
+            </div>
+            <div class="card__detail">
+              <div class="card__source text-bold">Josheph C</div>
+              <div class="card__description">Wants a study buddy for physics!</div>
+              <div class="card__note">College Freshman</div>
+            </div>
+          </div>
+          <div class="card__row">
+            <div class="card__icon"><i class="fas fa-phone"></i></div>
+            <div class="card__time">
+              <div>2 days ago</div>
+            </div>
+            <div class="card__detail">
+              <div class="card__source text-bold">Swarith R</div>
+              <div class="card__description">Wants to chat on the college process!</div>
+              <div class="card__note">11th Grade</div>
+            </div>
+          </div>
+          <div class="card__row">
+            <div class="card__icon"><i class="fas fa-book"></i></div>
+            <div class="card__time">
+              <div>3 days ago</div>
+            </div>
+            <div class="card__detail">
+              <div class="card__source text-bold">Random P</div>
+              <div class="card__description">Wants to study for the APCSP exam!</div>
+              <div class="card__note">10th Grade</div>
+            </div>
+          </div>
+          <div class="card__row">
+            <div class="card__icon"><i class="fas fa-book"></i></div>
+            <div class="card__time">
+              <div>A week ago</div>
+            </div>
+            <div class="card__detail">
+              <div class="card__source text-bold">Chris T</div>
+              <div class="card__description">Wants to pull an all nighter studying for calculus!</div>
+              <div class="card__note">12th Grade</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__header">
+          <div class="card__header-title text-light">Recent <strong>Conversations</strong>
+            <a href="#" class="card__header-link text-bold">View All</a>
+          </div>
+          <div class="settings">
+            <div class="settings__block"><i class="fas fa-edit"></i></div>
+            <div class="settings__block"><i class="fas fa-cog"></i></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="documents">
+            <div class="document">
+              <div class="document__img"></div>
+              <div class="document__title">Robert L</div>
+              <div class="document__date">1 hour ago</div>
+            </div>
+            <div class="document">
+              <div class="document__img"></div>
+              <div class="document__title">Caleb K</div>
+              <div class="document__date">A second ago</div>
+            </div>
+            <div class="document">
+              <div class="document__img"></div>
+              <div class="document__title">Swarith R</div>
+              <div class="document__date">Yesterday</div>
+            </div>
+            <div class="document">
+              <div class="document__img"></div>
+              <div class="document__title">Josheph C</div>
+              <div class="document__date">A week ago</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card--finance">
+        <div class="card__header">
+          <div class="card__header-title text-light">Monthly <strong>Study Hours</strong>
+            <a href="#" class="card__header-link text-bold">View All</a>
+          </div>
+          <div class="settings">
+            <div class="settings__block"><i class="fas fa-edit"></i></div>
+            <div class="settings__block"><i class="fas fa-cog"></i></div>
+          </div>
+        </div>
+        <div id="chartdiv"></div>
+      </div>
+    </div> <!-- /.main-cards -->
+  </main>
+
+  <footer class="footer">
+    <p><span class="footer__copyright">&copy;</span> 2020 StudyApp</p>
+    <p>Crafted with <i class="fas fa-heart footer__icon"></i> by <a href="#" target="_blank" class="footer__signature">Chris T</a></p>
+  </footer>
+</div>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+<script src='https://www.amcharts.com/lib/3/amcharts.js'></script>
+<script src='https://www.amcharts.com/lib/3/serial.js'></script>
+<script src='https://www.amcharts.com/lib/3/themes/light.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
